@@ -21,7 +21,8 @@ def grade(grade)
 end
 
 def sort
-  roster.sort_by { |key, val| val }
+  roster.each do |grade, names|
+  names.sort!
 end
   
 end
